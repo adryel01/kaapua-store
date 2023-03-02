@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Brush King';
+    src: url('../fonts/brushking/brushking.otf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+header {
+    display: none;
+}
+
+.Div1 {
+    height: 185px;
+    width: 100vw;
+    display: flex;
+    background-image: url('../assets/barco-silhueta.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.Div1>h1 {
+    font-size: 16px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Brush King';
+    line-height: 40px;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 4px;
+}
+
+.Div1>h1>span{
+    color: #05964E;
+}
+
+.Div2{
+    /* padding: 16px; */
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TextContent1{
+    font-family: 'Inter';
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.TextContent1>p>span{
+    color: #05964E;
+}
+
+.FundoRajado{
+    width: 100%;
+    max-width: 100vw;
+    /* transform: rotate(180deg); */
+    background-color: #fff;
+    position: relative;
+    bottom: 50px;
+    z-index: -2;
+    border-top: none;
+    /* border: 0px transparent; */
+}
+
+.Div3{
+    background-color: #fff;
+    margin-top: -60px;
+}
+
+.CamisetaVerde{
+    min-width: 350px;
+}
+
+.Div3>section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 700px;
+}
+
+.TextContent2{
+    /* width: 280px; */
+    min-width: 270px;
+    max-width: 320px;
+    background-color: #191919;
+    min-height: 470px;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px #727272;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.FundoRajadoInv{
+    width: 100%;
+    max-width: 100vw;
+    transform: rotate(180deg);
+    /* background-color: #000; */
+    position: relative;
+    bottom: -20px;
+    z-index: 0;
+    border-top: none;
+    /* border: 0px transparent; */
+}

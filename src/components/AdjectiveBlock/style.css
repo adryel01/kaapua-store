@@ -1,0 +1,41 @@
+.AjdectiveBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 16px;
+    width: 100%;
+}
+
+.IconBg{
+    background-color: #D9B34625;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextBlockContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    align-items: flex-start;
+}
+
+.TextBlockContainer>h4{
+    margin: 0;
+}
+
+.TextBlockContainer>p{
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 10;
+    font-size: small;
+    text-align: left;
+}
+
+
+
