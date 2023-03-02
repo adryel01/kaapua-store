@@ -1,0 +1,48 @@
+.HowToBuyBlockDesktop{
+    display: none;
+}
+
+
+@media (min-width:900px) {
+    .HowToBuyBlockDesktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        gap: 16px;
+        width: 80%;
+    }
+
+    .TextBlockContainerHTBDesktop{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TextBlockContainerHTBDesktop>h4{
+        margin: 0;
+        color: #D9B346;
+        font-size: 32px;
+    }
+    
+    .TextBlockContainerHTBDesktop>p{
+        padding-top: 5px;
+        margin: 0;
+        font-weight: 10;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .IconBgHTBDesktop{
+        /* background-color: #D9B34625; */
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

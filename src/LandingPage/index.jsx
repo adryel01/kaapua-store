@@ -11,6 +11,7 @@ import { BiTimer } from "react-icons/bi"
 import { BiInfinite } from "react-icons/bi"
 import { SiStylelint } from "react-icons/si"
 import { HowToBuy } from "../components/HowToBuy"
+import { HowToBuyDesktop } from "../components/HowToBuyDesktop"
 import { ImWhatsapp } from "react-icons/im"
 import { TbReportMoney } from "react-icons/tb"
 import { MdDesignServices } from "react-icons/md"
@@ -23,8 +24,9 @@ import { useContext } from "react"
 import { ImageContext } from "../components/context/ImageContext"
 import { ImageInput } from "../components/ImageInput"
 import { FooterComponent } from "../components/Footer"
-
-
+import logokaapua from "../assets/Sem-título-2.png"
+import { ButtonBuyDesktop } from "../components/ButtonBuyDesktop"
+import { ButtonBuyMobile } from "../components/ButtonBuyMobile"
 
 export function LandingPage() {
 
@@ -42,32 +44,40 @@ export function LandingPage() {
             </header>
             <main>
                 <div className="Div1">
+                    <img className="LogoDesktop" src={logokaapua} alt="" />
                     <h1>SUA PESCARIA FICOU AINDA MAIS ESTILOSA COM AS <span>CAMISETAS PERSONALIZADAS</span></h1>
                 </div>
 
                 <div className="Div2">
-                    <img src={pescadorkaapua} alt="" />
-                    <section className="TextContent1">
-                        <p>
-                            Experimente a combinação perfeita de conforto e proteção com nossas <span>camisetas de pesca personalizadas com proteção UV</span>.
-                        </p>
-                        <p>
-                            Feitas com <span>tecido de alta qualidade e tecnologia avançada</span>, estas camisetas garantem conforto durante todo o dia, mantendo a pele protegida dos danos causados pelos raios UV.
-                        </p>
-                        <p>
-                            Personalize a sua camiseta com o <span>seu design</span>  e tenha uma peça única para as suas <span>aventuras de pesca</span>.
-                        </p>
-                        <p>
-                            Aproveite a pesca sem se preocupar com a exposição ao sol e <span>garanta a sua camiseta personalizada com proteção UV agora</span>!
-                        </p>
+                    <section className="AjusteDiv2Desktop">
+                        <img src={pescadorkaapua} alt="" className="PescadorKaapua" />
+                        <section className="TextContent1">
+                            <p>
+                                Experimente a combinação perfeita de conforto e proteção com nossas <span>camisetas de pesca personalizadas com proteção UV</span>.
+                            </p>
+                            <p>
+                                Feitas com <span>tecido de alta qualidade e tecnologia avançada</span>, estas camisetas garantem conforto durante todo o dia, mantendo a pele protegida dos danos causados pelos raios UV.
+                            </p>
+                            <p>
+                                Personalize a sua camiseta com o <span>seu design</span>  e tenha uma peça única para as suas <span>aventuras de pesca</span>.
+                            </p>
+                            <p>
+                                Aproveite a pesca sem se preocupar com a exposição ao sol e <span>garanta a sua camiseta personalizada com proteção UV agora</span>!
+                            </p>
+                        </section>
                     </section>
+
                     <ButtonBuy textButton={'SOLICITE UM ORÇAMENTO'} url={'https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21'} />
                     <img src={fundorajado} alt="" className="FundoRajado" />
                 </div>
 
                 <div className="Div3">
-                    <img src={camisetaverde} alt="" className="CamisetaVerde" />
+
                     <section>
+                        <div>
+                            <img src={camisetaverde} alt="" className="CamisetaVerde" />
+                            <ButtonBuyDesktop textButton={'JÁ QUERO A MINHA'} url={'https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21'} />
+                        </div>
                         <div className="TextContent2">
                             <AdjectiveBlock
                                 icon={<CiSun size={36} color={'#D9B346'} />}
@@ -95,9 +105,9 @@ export function LandingPage() {
                                 text={'Além de ser funcional, a camiseta de pesca personalizada com proteção UV é uma peça estilosa que pode ser usada em diversas ocasiões.'} />
 
                         </div>
-                        <ButtonBuy textButton={'QUERO MINHA CAMISA PERSONALIZADA'} url={'https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21'} />
-                        <img src={fundorajado} alt="" className="FundoRajadoInv" />
                     </section>
+                    <ButtonBuyMobile textButton={'QUERO MINHA CAMISA PERSONALIZADA'} url={'https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21'} />
+                    <img src={fundorajado} alt="" className="FundoRajadoInv" />
                 </div>
 
                 <div className="Div4">
@@ -125,6 +135,27 @@ export function LandingPage() {
                                 text={'Após aprovação, o pedido será produzido e, após sua finalização, é necessário efetuar o pagamento restante para envio da sua camisa.'} />
 
 
+                            <HowToBuyDesktop
+                                icon={<ImWhatsapp size={126} color={'#D9B346'} />}
+                                title={'1º PASSO'}
+                                text={'Entre em contato com nossos especialistas em vendas para solicitar um orçamento.'} />
+
+                            <HowToBuyDesktop
+                                icon={<TbReportMoney size={126} color={'#D9B346'} />}
+                                title={'2º PASSO'}
+                                text={'Após a aprovação do orçamento, é necessário efetuar o pagamento de 50% do valor total do projeto.'} />
+
+                            <HowToBuyDesktop
+                                icon={<MdDesignServices size={126} color={'#D9B346'} />}
+                                title={'3º PASSO'}
+                                text={'Nossos designers entrarão em contato com você para desenvolver o layout e definir todos os detalhes do projeto.'} />
+
+                            <HowToBuyDesktop
+                                icon={<TbTruckDelivery size={126} color={'#D9B346'} />}
+                                title={'4º PASSO'}
+                                text={'Após aprovação, o pedido será produzido e, após sua finalização, é necessário efetuar o pagamento restante para envio da sua camisa.'} />
+
+
                         </div>
                         <img src={fundorajado} alt="" className="FundoRajadoTransparente" />
                     </section>
@@ -145,8 +176,10 @@ export function LandingPage() {
                 <div className="Div7">
                     <img src={fundorajado} alt="" className="FundoRajadoDiv6" />
                     <h1>VEJA COMO FICA</h1>
-                    <FormView />
-                    <ImageInput />
+                    <section>
+                        <FormView />
+                        <ImageInput />
+                    </section>
                     <img src={fundorajado} alt="" className="FundoRajadoDiv6Inv" />
                 </div>
 
@@ -155,7 +188,7 @@ export function LandingPage() {
                     <ButtonBuy textButton={'ACESSE NOSSO SITE AQUI!'} url={'https://www.kaapua.com.br'} />
                 </div>
             </main>
-            <FooterComponent/>
+            <FooterComponent />
         </div>
     )
 }

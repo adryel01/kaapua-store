@@ -1,5 +1,5 @@
 import "./style.css"
-import logokaapua from "../../assets/kaapua-pdf 2.png"
+import logokaapua from "../../assets/Sem-título-2.png"
 import { BsInstagram } from "react-icons/bs"
 import { FaFacebookF } from "react-icons/fa"
 import { Link } from "react-router-dom"

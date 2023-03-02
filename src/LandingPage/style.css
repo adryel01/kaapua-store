@@ -11,7 +11,7 @@ header {
 
 .Div1 {
     height: 185px;
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     background-image: url('../assets/barco-silhueta.png');
     background-size: cover;
@@ -19,6 +19,10 @@ header {
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
+}
+
+.LogoDesktop {
+    display: none;
 }
 
 .Div1>h1 {
@@ -35,11 +39,11 @@ header {
     padding: 4px;
 }
 
-.Div1>h1>span{
+.Div1>h1>span {
     color: #05964E;
 }
 
-.Div2{
+.Div2 {
     /* padding: 16px; */
     padding-top: 32px;
     display: flex;
@@ -47,19 +51,32 @@ header {
     align-items: center;
 }
 
-.TextContent1{
+.TextContent1 {
     font-family: 'Inter';
     color: #fff;
     display: flex;
     flex-direction: column;
     padding: 16px;
+    /* font-size: px; */
 }
 
-.TextContent1>p>span{
+.TextContent1>p>span {
     color: #05964E;
 }
 
-.FundoRajado{
+.AjusteDiv2Desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PescadorKaapua {
+    display: flex;
+    position: relative;
+    max-width: 650px;
+}
+
+.FundoRajado {
     width: 100%;
     max-width: 100vw;
     /* transform: rotate(180deg); */
@@ -71,16 +88,20 @@ header {
     /* border: 0px transparent; */
 }
 
-.Div3{
+.Div3 {
     background-color: #fff;
     margin-top: -60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.CamisetaVerde{
+.CamisetaVerde {
     min-width: 350px;
+    max-width: 400px;
 }
 
-.Div3>section{
+.Div3>section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +109,7 @@ header {
     min-height: 700px;
 }
 
-.TextContent2{
+.TextContent2 {
     /* width: 280px; */
     min-width: 270px;
     max-width: 320px;
@@ -102,7 +123,7 @@ header {
     flex-direction: column;
 }
 
-.FundoRajadoInv{
+.FundoRajadoInv {
     width: 100%;
     max-width: 100vw;
     transform: rotate(180deg);
@@ -114,7 +135,7 @@ header {
     /* border: 0px transparent; */
 }
 
-.Div4{
+.Div4 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +158,7 @@ header {
     position: relative;
 }
 
-.FundoRajadoTransparente{
+.FundoRajadoTransparente {
     width: 100%;
     max-width: 100vw;
     transform: rotate(0deg);
@@ -149,10 +170,10 @@ header {
     /* border: 0px transparent; */
 }
 
-.Div5{
+.Div5 {
     background-color: #ffffff80;
     height: 600px;
-    width: 100vw;
+    width: 100%;
     margin-top: -60px;
     background-image: url("../assets/vista-superior-da-isca-de-pesca-e-varas-de-pesca1.png");
     background-size: cover;
@@ -161,14 +182,14 @@ header {
     padding-top: 70px;
 }
 
-.Div5>h1{
+.Div5>h1 {
     font-family: 'Brush King';
     line-height: 90px;
     font-size: 46px;
     color: #000;
 }
 
-.CarouselImages{
+.CarouselImages {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +197,7 @@ header {
     /* height: 300px; */
 }
 
-.ImagePartners1{
+.ImagePartners1 {
     /* max-height: 150px; */
     max-width: 150px;
     display: flex;
@@ -184,7 +205,7 @@ header {
     justify-content: center;
 }
 
-.ImagePartners2{
+.ImagePartners2 {
     /* max-height: 150px; */
     max-width: 200px;
     display: flex;
@@ -192,7 +213,7 @@ header {
     justify-content: center;
 }
 
-.ImagePartners3{
+.ImagePartners3 {
     /* max-height: 150px; */
     max-width: 250px;
     display: flex;
@@ -200,35 +221,35 @@ header {
     justify-content: center;
 }
 
-.thumbs-wrapper{
+.thumbs-wrapper {
     display: none;
 }
 
-.carousel-status{
+.carousel-status {
     display: none;
 }
 
-.control-arrow{
+.control-arrow {
     display: none;
 }
 
-.control-dots{
+.control-dots {
     display: none;
 }
 
-.FundoRajadoTransparente2{
+.FundoRajadoTransparente2 {
     width: 100%;
     max-width: 100vw;
     transform: rotate(180deg);
     background-color: transparent;
     position: relative;
-    bottom: 10px;
+    bottom: 0px;
     z-index: 0;
     border-top: none;
     /* border: 0px transparent; */
 }
 
-.Div6{
+.Div6 {
     margin-top: -25px;
     /* padding: 0 12px; */
     display: flex;
@@ -236,14 +257,16 @@ header {
     align-items: center;
 }
 
-.Div6>h1{
+.Div6>h1 {
     font-family: 'Brush King';
     line-height: 90px;
     font-size: 46px;
     color: #05964E;
+    margin-top: 55px;
+    position: relative;
 }
 
-.Div7{
+.Div7 {
     background-color: #ffffff95;
     min-height: 700px;
     background-image: url("../assets/silhueta-de-um-homem-pescando-na-praia-ao-por-do-sol1.png");
@@ -257,14 +280,15 @@ header {
     align-items: center;
 }
 
-.Div7>h1{
+.Div7>h1 {
     font-family: 'Brush King';
     line-height: 90px;
-    font-size: 32px;
+    font-size: 28px;
     color: #000;
+    max-width: 95%;
 }
 
-.FundoRajadoDiv6{
+.FundoRajadoDiv6 {
     width: 100%;
     max-width: 100vw;
     transform: rotate(0deg);
@@ -276,7 +300,7 @@ header {
     /* border: 0px transparent; */
 }
 
-.FundoRajadoDiv6Inv{
+.FundoRajadoDiv6Inv {
     width: 100%;
     max-width: 100vw;
     transform: rotate(180deg);
@@ -288,19 +312,207 @@ header {
     /* border: 0px transparent; */
 }
 
-.Div8{
+.Div8 {
     margin-top: -25px;
-    /* padding: 0 12px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 12px;
+    margin-bottom: 100px;
 }
 
-.Div8>h1{
+.Div8>h1 {
     font-family: 'Brush King';
     line-height: 90px;
     font-size: 32px;
     color: #05964E;
+    position: relative;
+    bottom: 50px;
 }
 
+.ImageProjects{
+    max-width: 450px;
+}
+
+@media (min-width: 900px) {
+    .Div1 {
+        min-height: 400px;
+        max-width: 100vw;
+        display: flex;
+        background-image: url('../assets/barco-silhueta.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .LogoDesktop {
+        display: flex;
+        min-height: 250px;
+    }
+
+    .Div1>h1 {
+        font-size: 24px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        font-family: 'Brush King';
+        line-height: 70px;
+        color: #fff;
+        letter-spacing: 3px;
+        padding: 4px;
+        width: 55%;
+    }
+
+    .AjusteDiv2Desktop {
+        /* padding: 16px; */
+        padding-top: 32px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0 32px;
+        width: 95%;
+        padding-bottom: 80px;
+    }
+
+    .PescadorKaapua {
+        min-height: 350px;
+        position: relative;
+        z-index: -1;
+        top: 0;
+        right: 30px;
+    }
+
+    .TextContent1 {
+        font-family: 'Inter';
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .FundoRajado {
+        bottom: 150px;
+    }
+
+
+    .Div3 {
+        background-color: #fff;
+        margin-top: -150px;
+        /* max-width: 100vw; */
+    }
+
+    .Div3>section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .Div3>section>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TextContent2 {
+        /* width: 280px; */
+        min-width: 200px;
+        max-width: 400px;
+        background-color: #191919;
+        min-height: 470px;
+        padding: 24px;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px #727272;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .CamisetaVerde {
+        min-width: 400px;
+        max-width: 600px;
+    }
+
+
+    .Div4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Div4>h1 {
+        font-size: 68px;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        font-family: 'Brush King';
+        line-height: 120px;
+        color: #05964E;
+        letter-spacing: 2px;
+        padding: 4px;
+        margin-top: -150px;
+        position: relative;
+        
+    }
+
+    .Div4>section{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .TextContent3{
+        display: flex;
+        flex-direction: row;
+        font-size: 32px;
+    }
+
+    .FundoRajadoTransparente {
+        width: 100%;
+        max-width: 100vw;
+        transform: rotate(0deg);
+        background-color: transparent;
+        position: relative;
+        bottom: -120px;
+        z-index: 0;
+        border-top: none;
+        /* border: 0px transparent; */
+    }
+
+    .ImageProjects{
+        max-width: 550px;
+    }
+
+    .Div7>section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .Div8 {
+        margin-top: 0px;
+        /* padding: 0 12px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 12px;
+        margin-bottom: 150px;
+    }
+
+    .Div8>h1{
+        position: relative;
+        bottom: 100px;
+        font-size: 42px;
+    }
+}

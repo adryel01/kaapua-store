@@ -1,0 +1,21 @@
+
+.ButtonBuyDesktop{
+    display: none; 
+}
+
+@media (min-width:900px) {
+    .ButtonBuyDesktop{
+        min-height: 100px;
+        min-width: 350px;
+        max-width: 450px;
+        color: #fff;
+        background-color: #05964E;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 32px;
+        border-radius: 8px;
+        font-size: 32px;
+    }
+}
