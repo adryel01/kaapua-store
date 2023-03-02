@@ -113,3 +113,117 @@ header {
     border-top: none;
     /* border: 0px transparent; */
 }
+
+.Div4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Div4>h1 {
+    font-size: 28px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Brush King';
+    line-height: 60px;
+    color: #05964E;
+    letter-spacing: 2px;
+    padding: 4px;
+    margin-top: -30px;
+    position: relative;
+}
+
+.FundoRajadoTransparente{
+    width: 100%;
+    max-width: 100vw;
+    transform: rotate(0deg);
+    background-color: transparent;
+    position: relative;
+    bottom: -20px;
+    z-index: 0;
+    border-top: none;
+    /* border: 0px transparent; */
+}
+
+.Div5{
+    background-color: #ffffff80;
+    height: 600px;
+    width: 100vw;
+    margin-top: -60px;
+    background-image: url("../assets/vista-superior-da-isca-de-pesca-e-varas-de-pesca1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+}
+
+.Div5>h1{
+    font-family: 'Brush King';
+    line-height: 90px;
+    font-size: 46px;
+    color: #000;
+}
+
+.CarouselImages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 300px; */
+}
+
+.ImagePartners1{
+    /* max-height: 150px; */
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagePartners2{
+    /* max-height: 150px; */
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImagePartners3{
+    /* max-height: 150px; */
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbs-wrapper{
+    display: none;
+}
+
+.carousel-status{
+    display: none;
+}
+
+.control-arrow{
+    display: none;
+}
+
+.control-dots{
+    display: none;
+}
+
+.FundoRajadoTransparente2{
+    width: 100%;
+    max-width: 100vw;
+    transform: rotate(180deg);
+    background-color: transparent;
+    position: relative;
+    bottom: 10px;
+    z-index: 0;
+    border-top: none;
+    /* border: 0px transparent; */
+}
