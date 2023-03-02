@@ -16,19 +16,19 @@ import { TbReportMoney } from "react-icons/tb"
 import { MdDesignServices } from "react-icons/md"
 import { TbTruckDelivery } from "react-icons/tb"
 import { CarouselPartners } from "../components/PartnersSlider/PartnersSlider"
-import {Carousel} from "react-responsive-carousel"
 import { CarouselProjects } from "../components/ProjectMaked"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FormView } from "../components/Form"
 import { useContext } from "react"
 import { ImageContext } from "../components/context/ImageContext"
 import { ImageInput } from "../components/ImageInput"
+import { FooterComponent } from "../components/Footer"
 
 
 
 export function LandingPage() {
 
-    const {inputValue} = useContext(ImageContext)
+    const { inputValue } = useContext(ImageContext)
 
     return (
         <div>
@@ -132,26 +132,30 @@ export function LandingPage() {
 
                 <div className="Div5">
                     <h1>PARCEIROS KAAPUÃ</h1>
-                    <CarouselPartners/>
+                    <CarouselPartners />
                     <img src={fundorajado} alt="" className="FundoRajadoTransparente2" />
                 </div>
 
                 <div className="Div6">
                     <h1>PROJETOS</h1>
-                    <CarouselProjects/>
+                    <CarouselProjects />
                     <ButtonBuy textButton={'JÁ QUERO A MINHA'} url={'https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21'} />
-                    {/* <img src={fundorajado} alt="" className="FundoRajadoDiv6" /> */}
                 </div>
 
                 <div className="Div7">
-                <img src={fundorajado} alt="" className="FundoRajadoDiv6" />
+                    <img src={fundorajado} alt="" className="FundoRajadoDiv6" />
                     <h1>VEJA COMO FICA</h1>
-                    <FormView/>
-                    {/* <p>{inputValue}</p> */}
-                    {/* <img src={fundorajado} alt="" className="FundoRajadoTransparente" /> */}
-                    <ImageInput/>
+                    <FormView />
+                    <ImageInput />
+                    <img src={fundorajado} alt="" className="FundoRajadoDiv6Inv" />
+                </div>
+
+                <div className="Div8">
+                    <h1>COMPRE TAMBÉM PELO NOSSO SITE</h1>
+                    <ButtonBuy textButton={'ACESSE NOSSO SITE AQUI!'} url={'https://www.kaapua.com.br'} />
                 </div>
             </main>
+            <FooterComponent/>
         </div>
     )
 }

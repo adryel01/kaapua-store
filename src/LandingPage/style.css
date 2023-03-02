@@ -276,3 +276,31 @@ header {
     /* border: 0px transparent; */
 }
 
+.FundoRajadoDiv6Inv{
+    width: 100%;
+    max-width: 100vw;
+    transform: rotate(180deg);
+    background-color: transparent;
+    position: relative;
+    bottom: 0px;
+    z-index: -0;
+    border-top: none;
+    /* border: 0px transparent; */
+}
+
+.Div8{
+    margin-top: -25px;
+    /* padding: 0 12px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.Div8>h1{
+    font-family: 'Brush King';
+    line-height: 90px;
+    font-size: 32px;
+    color: #05964E;
+}
+
