@@ -17,16 +17,18 @@ import { MdDesignServices } from "react-icons/md"
 import { TbTruckDelivery } from "react-icons/tb"
 import { CarouselPartners } from "../components/PartnersSlider/PartnersSlider"
 import {Carousel} from "react-responsive-carousel"
+import { CarouselProjects } from "../components/ProjectMaked"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import goias from "../assets/ESCUDOGOIAS.png"
-import atletico from "../assets/escudo_fundo_branco-removebg-preview1.png"
-import vila from "../assets/VilaNovaFC2021.png"
-import multicanal from "../assets/MULTICANALATACADO1.png"
-import luarmilitaria from "../assets/LUAR_MILITARIA-removebg-preview1.png"
-import riodaspedras from "../assets/RIODASPEDRAS1.png"
+import { FormView } from "../components/Form"
+import { useContext } from "react"
+import { ImageContext } from "../components/context/ImageContext"
+import { ImageInput } from "../components/ImageInput"
+
 
 
 export function LandingPage() {
+
+    const {inputValue} = useContext(ImageContext)
 
     return (
         <div>
@@ -130,28 +132,24 @@ export function LandingPage() {
 
                 <div className="Div5">
                     <h1>PARCEIROS KAAPUÃ</h1>
-                    <Carousel autoPlay={true} infiniteLoop={true}>
-                        <div className="CarouselImages">
-                            <img src={goias} className="ImagePartners1"/>
-                        </div>
-                        <div className="CarouselImages">
-                            <img src={atletico} className="ImagePartners2"/>
-                        </div>
-                        <div className="CarouselImages">
-                            <img src={vila} className="ImagePartners1"/>
-                        </div>
-                        <div className="CarouselImages">
-                            <img src={multicanal} className="ImagePartners3"/>
-                        </div>
-                        <div className="CarouselImages">
-                            <img src={luarmilitaria} className="ImagePartners2"/>
-                        </div>
-                        <div className="CarouselImages">
-                            <img src={riodaspedras} className="ImagePartners3"/>
-                        </div>
-                    </Carousel>
+                    <CarouselPartners/>
                     <img src={fundorajado} alt="" className="FundoRajadoTransparente2" />
+                </div>
 
+                <div className="Div6">
+                    <h1>PROJETOS</h1>
+                    <CarouselProjects/>
+                    <ButtonBuy textButton={'JÁ QUERO A MINHA'} url={'https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21'} />
+                    {/* <img src={fundorajado} alt="" className="FundoRajadoDiv6" /> */}
+                </div>
+
+                <div className="Div7">
+                <img src={fundorajado} alt="" className="FundoRajadoDiv6" />
+                    <h1>VEJA COMO FICA</h1>
+                    <FormView/>
+                    {/* <p>{inputValue}</p> */}
+                    {/* <img src={fundorajado} alt="" className="FundoRajadoTransparente" /> */}
+                    <ImageInput/>
                 </div>
             </main>
         </div>

@@ -227,3 +227,52 @@ header {
     border-top: none;
     /* border: 0px transparent; */
 }
+
+.Div6{
+    margin-top: -25px;
+    /* padding: 0 12px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Div6>h1{
+    font-family: 'Brush King';
+    line-height: 90px;
+    font-size: 46px;
+    color: #05964E;
+}
+
+.Div7{
+    background-color: #ffffff95;
+    min-height: 700px;
+    background-image: url("../assets/silhueta-de-um-homem-pescando-na-praia-ao-por-do-sol1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding-top: 50px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Div7>h1{
+    font-family: 'Brush King';
+    line-height: 90px;
+    font-size: 32px;
+    color: #000;
+}
+
+.FundoRajadoDiv6{
+    width: 100%;
+    max-width: 100vw;
+    transform: rotate(0deg);
+    background-color: transparent;
+    position: relative;
+    bottom: 0px;
+    z-index: -0;
+    border-top: none;
+    /* border: 0px transparent; */
+}
+
