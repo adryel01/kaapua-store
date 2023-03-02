@@ -1,5 +1,6 @@
 import "./style.css"
 import { ButtonBuy } from "../components/ButtonBuy"
+import { Link } from "react-router-dom"
 import barcobg from "../assets/barco-silhueta.png"
 import pescadorkaapua from "../assets/274176696_1094212471398362_8107857512694593257_n 1.png"
 import fundorajado from "../assets/FUNDO RAJADO 1.png"
@@ -27,6 +28,7 @@ import { FooterComponent } from "../components/Footer"
 import logokaapua from "../assets/Sem-título-2.png"
 import { ButtonBuyDesktop } from "../components/ButtonBuyDesktop"
 import { ButtonBuyMobile } from "../components/ButtonBuyMobile"
+import whatsappButton from "../assets/whatsapp (1).png"
 
 export function LandingPage() {
 
@@ -189,6 +191,7 @@ export function LandingPage() {
                 </div>
             </main>
             <FooterComponent />
+            <Link to='https://wa.me/5562984343574?text=Ol%C3%A1%2C+gostaria+de+comprar+uma+camiseta+de+pesca+personalizada%21' className="ButtonWhatsapp"><img className="ButtonWhatsapp animate__animated animate__pulse animate__infinite" src={whatsappButton} alt="" /></Link>
         </div>
     )
 }

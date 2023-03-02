@@ -8,8 +8,6 @@ export const ImageContext = createContext({})
 export function ImageProvider ({children}){
     const [inputValue, setValueInput] = useState('')
     const [selectValue, setSelectValue] = useState('costas')
-    const [camisetaValue, setCamisetaValue] = useState('')
-    console.log(inputValue)
 
     return (
 

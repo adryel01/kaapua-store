@@ -10,8 +10,6 @@ export function FormView(){
         setSelectValue(event.currentTarget.value)
     }
 
-    console.log(selectValue)
-
     function valueName(event){
         setValueInput(event.currentTarget.value)
     }

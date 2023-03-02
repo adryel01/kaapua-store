@@ -334,6 +334,14 @@ header {
     max-width: 450px;
 }
 
+.ButtonWhatsapp{
+    height: 50px; 
+    width: 50px; 
+    position:fixed; 
+    bottom: 20px; 
+    right: 30px;
+}
+
 @media (min-width: 900px) {
     .Div1 {
         min-height: 400px;
@@ -514,5 +522,13 @@ header {
         position: relative;
         bottom: 100px;
         font-size: 42px;
+    }
+
+    .ButtonWhatsapp{
+        height: 100px; 
+        width: 100px; 
+        position:fixed; 
+        bottom: 80px; 
+        right: 80px;
     }
 }

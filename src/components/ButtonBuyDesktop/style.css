@@ -6,8 +6,8 @@
 @media (min-width:900px) {
     .ButtonBuyDesktop{
         min-height: 100px;
-        min-width: 350px;
-        max-width: 450px;
+        min-width: 400px;
+        max-width: 550px;
         color: #fff;
         background-color: #05964E;
         text-decoration: none;
